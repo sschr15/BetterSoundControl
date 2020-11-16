@@ -45,3 +45,11 @@ public class MoreSoundCategories implements SoundCategoryEntrypoint {
     // etc...
 }
 ```
+
+Finally, create translations:
+
+```json
+{
+    "soundCategory.category": "My Category!"
+}
+```
