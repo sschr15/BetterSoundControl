@@ -53,3 +53,9 @@ Finally, create translations:
     "soundCategory.category": "My Category!"
 }
 ```
+
+## Helpful People
+
+- @Pyrofab added French translation
+- @UpcraftLP added German translation
+- @LeoCTH added Chinese translation
