@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "bettersoundcontrol",
+    "version": "${version}",
+    "name": "Better Sound Control",
+    "description": "Gives more sound control",
+    "authors": [
+        "sschr15"
+    ],
+    "contact": {
+        "website": "http://concern.i.ng",
+        "repo": "https://github.com/sschr15/BetterSoundControl"
+    },
+    "license": "MIT",
+    "icon": "assets/bettersoundcontrol/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "sschr15.fabricmods.bettersoundcontrol.client.BetterSoundControl"
+        ],
+        "server": [
+            "sschr15.fabricmods.bettersoundcontrol.server.BetterSoundControlServer"
+        ],
+        "bettersoundcontrol": [
+            "sschr15.fabricmods.bettersoundcontrol.common.BetterSoundControlCategories"
+        ]
+    },
+    "mixins": [
+        "bettersoundcontrol.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.10.8",
+        "fabric": "*",
+        "minecraft": "1.16.4"
+    }
+}

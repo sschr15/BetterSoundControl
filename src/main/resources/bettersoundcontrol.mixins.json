@@ -1,0 +1,21 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "sschr15.fabricmods.bettersoundcontrol.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "common.PlaySoundCommandMixin",
+        "common.StopSoundCommandMixin"
+    ],
+    "client": [
+        "client.OptionsScreenMixin",
+        "client.AbstractButtonWidgetMixin",
+        "client.GameOptionsMixin",
+        "client.ItemStatsListWidgetMixin",
+        "client.SoundOptionsScreenMixin",
+        "client.WorldListWidgetEntryMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
