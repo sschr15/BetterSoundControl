@@ -1,4 +1,5 @@
 {
     "soundCategory.unknown": "Inconnu",
-    "soundCategory.gui": "Menus"
+    "soundCategory.gui": "Menus",
+    "bettersoundcontrol.chat.done": "Les catégories de son ont été synchronisées avec succès"
 }
