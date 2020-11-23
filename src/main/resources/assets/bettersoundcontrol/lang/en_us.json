@@ -1,4 +1,5 @@
 {
     "soundCategory.unknown": "Unknown",
-    "soundCategory.gui": "GUI"
+    "soundCategory.gui": "GUI",
+    "bettersoundcontrol.chat.done": "Successfully synced sound categories with server!"
 }

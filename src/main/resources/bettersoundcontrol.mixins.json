@@ -5,15 +5,20 @@
     "compatibilityLevel": "JAVA_8",
     "mixins": [
         "common.PlaySoundCommandMixin",
+        "common.SoundCategoryMixin",
         "common.StopSoundCommandMixin"
     ],
     "client": [
-        "client.OptionsScreenMixin",
         "client.AbstractButtonWidgetMixin",
         "client.GameOptionsMixin",
         "client.ItemStatsListWidgetMixin",
+        "client.OptionsScreenMixin",
         "client.SoundOptionsScreenMixin",
         "client.WorldListWidgetEntryMixin"
+    ],
+    "server": [
+        "server.PlaySoundIdS2CPacketServerAccessor",
+        "server.PlayerManagerMixin"
     ],
     "injectors": {
         "defaultRequire": 1

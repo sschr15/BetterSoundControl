@@ -1,5 +1,6 @@
 package sschr15.fabricmods.bettersoundcontrol.api;
 
+import com.google.common.collect.ImmutableList;
 import net.fabricmc.loader.api.FabricLoader;
 import net.gudenau.lib.unsafe.Unsafe;
 import org.jetbrains.annotations.NotNull;
@@ -11,6 +12,7 @@ import net.minecraft.sound.SoundCategory;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,6 +22,8 @@ import java.util.Map;
  */
 public class SoundCategoryUtils {
     private static final Map<String, SoundCategory> CUSTOM_CATEGORIES = new HashMap<>();
+
+    public static final List<SoundCategory> DEFAULTS;
 
     private static final Field ORDINAL;
     private static final Field NAME;
@@ -48,6 +52,8 @@ public class SoundCategoryUtils {
 
             //noinspection unchecked
             CUSTOM_CATEGORIES.putAll((Map<String, SoundCategory>) byName.get(null));
+            //noinspection unchecked
+            DEFAULTS = ImmutableList.copyOf(((Map<String, SoundCategory>) byName.get(null)).values());
         } catch (ReflectiveOperationException e) {
             throw new RuntimeException(e);
         }

@@ -4,7 +4,8 @@ A simple mod to allow other mods to use their own sound categories.
 
 ## Installing
 
-To use this alone on the client, download it from [my maven](http://maven.concern.i.ng/sschr15/fabricmods/BetterSoundControl/0.1.0/BetterSoundControl-0.1.0.jar).
+To use this alone on the client, download it from
+[my maven](https://maven.concern.i.ng/sschr15/fabricmods/BetterSoundControl/1.0.0/BetterSoundControl-1.0.0.jar).
 
 ## Using in a Development Environment
 
@@ -13,15 +14,15 @@ Add to your `build.gradle` (or `build.gradle.kts`):
 ```groovy
 repositories {
     maven {
-        url = "http://maven.concern.i.ng" // surround with urlOf() if using Kotlin DSL
+        url = "https://maven.concern.i.ng" // surround with urlOf() if using Kotlin DSL
     }
 }
 
 dependencies {
-    implementation("sschr15.fabricmods:BetterSoundControl:0.1.0")
+    implementation("sschr15.fabricmods:BetterSoundControl:1.0.0")
     
     // Suggested, not required:
-    include("sschr15.fabricmods:BetterSoundControl:0.1.0")
+    include("sschr15.fabricmods:BetterSoundControl:1.0.0")
 }
 ```
 
@@ -59,3 +60,6 @@ Finally, create translations:
 - @Pyrofab added French translation
 - @UpcraftLP added German translation
 - @LeoCTH added Chinese translation
+- @elJoa added Spanish translation
+- @BeetMacol added Polish translation
+- @Riteo added Italian translation
