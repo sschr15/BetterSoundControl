@@ -1,4 +1,5 @@
 {
     "soundCategory.unknown": "未知",
-    "soundCategory.gui": "界面"
+    "soundCategory.gui": "界面",
+    "bettersoundcontrol.chat.done": "已成功与服务器同步声音类别！"
 }
